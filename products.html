@@ -1,52 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset= "UTF -8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Dreions products</title>
-    <link rel="stylesheet" href="Style.css"></link>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Products </title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <div class="loader-wrapper">
 
-    <div class="spinner"></div>
-    <p>Loading products. Please wait a moment until you have been redirected to the product page. </p>
-    <header class="navbar">
-        <div class="logo">
-            <span class="logo icon"></span>
-         </div>
-         <nav>
+    <!-- Loading Spinner Overlay -->
+    <div class="loader-overlay" id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Animated Navigation Menu -->
+    <header class="header">
+        <nav class="nav-menu">
+            <div class="logo">
+                <span class="icon-spin">⭐</span> Dre'ions Store
+            </div>
             <ul class="nav-links">
-                <li><a href ="#hero" class="nav-item">Home</a></li>
-                <li><a href ="#hero" class="nav-item">Contacts</a></li>
-                <li><a href ="#hero" class="nav-item">Deals</a></li>
-                <li><a href ="#hero" class="nav-item">Products</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-         </nav>
-
+        </nav>
     </header>
-    <section id="hero" class="hero">
-        <div class="hero-decor"></div>
-        <div class="hero content">
-            <h1></h1>
-            <p></p>
-            <a href ="#products" class="cta-btn">Explore Collection</a>
+
+    <!-- Hero Section with Animated Background -->
+    <section class="hero" id="hero">
+        <div class="hero-skew-accent"></div>
+        <div class="hero-content">
+            <h1>Discover our Products</h1>
+         
+            <button class="cta-button">Explore Collection</button>
         </div>
     </section>
-    <section id="products" class="products-section">
-        <h2 class="Section-Title">Featured products</h2>
-        <div class="product grid">
-            <article class="product card" style="--delay: 0.1s">
-                <div class="card-badge">New</div>
-                <div class="card-image">
-                  
+
+    <!-- Featured Product Cards (Minimum 6) -->
+    <main class="products-section" id="products">
+        <h2> Products</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <article class="product-card">
+                <div class="card-image-wrapper">
+                    <img src="https://m.media-amazon.com/images/I/81-k6NTfLfL.jpg"
+                     width="420px" height="180px">
+                    <span class="badge">New</span>
+                </div>
+                <div class="card-body">
+                    <h3>Cooler Master TD5 Pro Gaming PC – AMD RYZEN 7 9800X3D, NVIDIA
+                         GeForce RTX 5070 Ti 16GB, 32GB DDR5 6000MHz, 2TB Gen4 M.2, W
+                         indows 11, MWE Gold 850 V3 PSU, ATX Desktop PC</h3>
+                    <p>The Cooler Master TD 5 Pro redefines gaming and professional compu
+                        ting with exceptional cooling and performance that outshines the c
+                        ompetition. Gaming Powerhouse: Experience smooth gameplay at 60+ F
+                        PS in Full HD+ resolution across a wide range of popular titles, i
+                        ncluding ROBLOX, Minecraft, Call of Duty, Fortnite, The Sims, Leag
+                        ue of Legends, Counter-Strike, Valorant, GTA V, Overwatch, Rocket 
+                        League, Apex Legends, Rainbow Six, Escape from Tarkov, Genshin Impa
+                        ct, Destiny 2, World of Warcraft, Cyberpunk 2077, Dota 2, Battlefie
+                        ld, and more. With NVIDIA’s Ray Tracing technology, enjoy breathtak
+                        ing visuals and immersive VR experiences. Built for Professionals: 
+                        Beyond gaming, the TD 5 Pro excels in content creation, data analys
+                        is, and other intensive workloads, delivering professional-grade per
+                        formance with advanced cooling and high-end components. Its sleek, 
+                        durable design ensures reliability and efficiency, making it the perf
+                        ect workstation for productivity. Whether you're gaming at the highes
+                        
+                        t level or tackling demanding tasks, the Cooler Master TD 5 Pro is bui
+                        lt to elevate your experience.</p>
+                    <span class="price">R7000</span>
+                    <button class="cta-button card-btn">Add to Cart</button>
                 </div>
             </article>
 
+            <!-- Product 2 -->
+            <article class="product-card">
+                <div class="card-image-wrapper">
+                    <img src="https://www.firstshop.co.za/cdn/shop/files/vkx-5023-bk-smartwatches-1215903334.jpg?v=1767948189&width=1214"
+                    width="420px" height="180px">
+                    
+                </div>
+                <div class="card-body">
+                    <h3>Quantum Smartwatch</h3>
+                    <p>Track health, fitness, and notifications effortlessly.• Display: 1.43-inch AMOLED display with a sharp 466 × 466 resolution.
+                        • GPS Technology: Dual-band GPS tracking for accurate route and distance tracking during running, cycling, and hiking.
+                        • Water Resistance: 5 ATM water resistance rating (suitable for swimming and heavy sweat) (listed with IP68 ratings on select retailer specs).
+                        • Battery Life: 450 mAh battery offering up to 18 hours of continuous GPS use, 8 to 10 days of typical daily operation, and up to 20 days on standby.
+                        • Health & Fitness Tracking: Monitors heart rate, SpO2 (blood oxygen), sleep, stress, and recovery metrics, alongside multi-sport modes.
+                        • Connectivity & Calls: Bluetooth wireless calling capabilities (answer and make calls directly from the wrist) and smart notifications for messages and apps.
+                        • Storage & Extras: Local music storage for phone-free listening, voice assistant readiness, and companion app support via the Volkano Active App.
+                        • Design: Hypoallergenic silicone strap with a sleek black finish and magnetic charging.</p>
+                    <span class="price">R1000</span>
+                    <button class="cta-button card-btn">Add to Cart</button>
+                </div>
+            </article>
 
+            <!-- Product 3 -->
+            <article class="product-card">
+                <div class="card-image-wrapper">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv2bXIDMAZxRIhRuxKAMR4VbU064Nys-BtOEkZeEUaaQ&s=10"
+                     width="420px" height="180px">
+                </div>
+                <div class="card-body">
+                    <h3>Ergonomic Mech Keyboard</h3>
+                    <p>Custom tactile switches built for peak productivity.</p>
+                    <span class="price">R13 000</span>
+                    <button class="cta-button card-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <!-- Product 4 -->
+            <article class="product-card">
+                <div class="card-image-wrapper">
+                    <img src="data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADrbWV0YQAAAAAAAAAhaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAAAAAAAOcGl0bQAAAAAAAQAAAB5pbG9jAAAAAEQAAAEAAQAAAAEAAAETAAAD9QAAAChpaW5mAAAAAAABAAAAGmluZmUCAAAAAAEAAGF2MDFDb2xvcgAAAABqaXBycAAAAEtpcGNvAAAAFGlzcGUAAAAAAAABXwAAAV8AAAAQcGl4aQAAAAADCAgIAAAADGF2MUOBAAwAAAAAE2NvbHJuY2x4AAIAAgAGgAAAABdpcG1hAAAAAAAAAAEAAQQBAoMEAAAD/W1kYXQSAAoKGCIr1eYIEBA0IDLkBxIAAooooUC0gap+9LfDWa4HW1VKnx+KnwhXiAGEhnmaHljFP+maiVucKNeIRrP9PY7Zuel4fzu1DBjbumYSbhZbbMAJEVqshkioFhE3+33CK/4l85wyBz3lgGO+in2b7iKmVC1G5klzKj5yk3VFj19jqwIbH965VWZkrbqp2Wy9TvkJu9tHfcl5v5X7RfEhDJsMV+4YZ7Tafx/32l3KAGs/AIJpz4T9Tdtz8NdPyyMUX3iNHSIudsHZyPo25ECaq1RrtiBubyEEnGNBcEpKBnR6MOAIDIvuq66yKk+Ch2SITxuEd7DSHVNTvcV7qCcvBew6Sdh0lMx/uTUbBnJD1RY9mnm4gJ8pFHZa0qgjBs8WJm1xJ12qfvJo1sxsqi+qUKK+5xznzA/wNnBUcT92mk721a3cTVsZysE3E224Sd1MR558EG2ruLLncCQivUHZQPzo62YsdcfppOMqdaoI94lDz1u+y9N9HDG4/2YFBJrq5TcsbWCmZmVpO1obogQD2d8HrhxLkCc2yBac3B/z+0Q150/YMPOQx6OThgHvd2q+JnpbJ93G/geQNGFRIhgXF6l3YaTpZIGdDjlEEgzSctd/ZZ7uJ2VdpfPFuNxwzjKh2uvx+8w2k1FkwBhbvMSofiLMGqIyZwbC5Y7MiZTsHUdnHPq0uVqFtyDjDq9i/6kRrciu7aTlJVbpWlOf6QyhvnT8zgs9m3Oix8sXtSvCLn03Kus2FV3pEsWSzX/+oEhxYL28hIYBqZ6WaAAjInRRz7sH/6ad/fJZofT+LcU1ffP1Wzn/nm2nrs85L1Ess5dURzk0suMV9YfpgRX9Gnnt4QmR5nKYruFVbw79vzOtk61zGsJFictODmlVfsRyUeCblHbK9shMXEcVfUOxX7Jcgw03OOxlyy8VdMEttZj4LWMMrjMHaoMkeCapIJ9KpSJCwFZRg8CAxOpmu1TbAXJu/UkyEXLwxE2UqE+mGMHxt5dpjUJ2O45mY2BxKsizeyEOVA/Z4h6phXplaT4pRb6SPFOYkNmqJa520RHMyRpio1zKu/z80sPL6mrBh+cHY3h4e0+EaELVM1XkHXRN6LwORH7wo6G6PvR9fmYZrCAa0iZ+Hn+uGIpJKd1cFQbALNlLIMf9tkkazIGZMTIki1EAX3I4w3dAUZDY+zAxRmzZ9MuFhob/wfBNxkoU2yZY8FOvelH/ipAssNmYH7EwFhjVf39z7grQ4wA/ff2JTazguhlkJXOyY9nU5Zd8EyyFQUDc2ZcwPqmTMn2t2dCaOOx9sZXEH/6os+hAl5I8275GEWKolchRCDX0Mh0yKCZuWNY24UkCIA=="
+                     width="420px" height="180px">
+                </div>
+                <div class="card-body">
+                    <h3>UltraWide Curved Monitor</h3>
+                    <p>Stunning 4K resolution for ultimate multitasking.</p>
+                    <span class="price">R55 000</span>
+                    <button class="cta-button card-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <!-- Product 5 -->
+            <article class="product-card">
+                <div class="card-image-wrapper">
+                    <img src="https://m.media-amazon.com/images/I/61xxhaeUKIL.jpg"
+                     width="420px" height="180px">
+                </div>
+                <div class="card-body">
+                    <h3>Minimalist Desk Lamp</h3>
+                    <p>Adjustable warmth and brightness color spectrums.</p>
+                    <span class="price">R600</span>
+                    <button class="cta-button card-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <!-- Product 6 -->
+            <article class="product-card">
+                <div class="card-image-wrapper">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_KQuFU35Blz0vuqKaxVeTMvvZMXqbUMsE1Cq_pJy8A&s=10"
+                     width="420px" height="180px">
+                </div>
+                <div class="card-body">
+                    <h3>Precision Gaming Mouse</h3>
+                    <p>Ultra-lightweight frame with customizable DPI.</p>
+                    <span class="price">R250</span>
+                    <button class="cta-button card-btn">Add to Cart</button>
+                </div>
+            </article>
         </div>
-    </section>
+    </main>
+
+    <script>
+        // Simple script to hide the loading spinner after content loads
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            setTimeout(() => {
+                loader.style.opacity = '0';
+                loader.style.visibility = 'hidden';
+            }, 600);
+        });
+    </script>
 </body>
-</head>
 </html>
